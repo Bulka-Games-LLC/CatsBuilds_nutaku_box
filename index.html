@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-    <ModulePrefs title="Cats" author="Bulka Games LLC" thumbnail="" screenshot="" height="1080" width="1920">
+    <ModulePrefs title="Kinky Cats" author="Bulka Games LLC" thumbnail="" screenshot="" height="1080" width="1920">
         <Require feature="opensocial-0.8"/>
         <Require feature="opensocial-payment"/>
         <Require feature="nutaku"/>
@@ -9,8 +9,8 @@
     </ModulePrefs>
     <Content preferred_width="1920" preferred_height="1080" type="html" view="canvas">
         <![CDATA[
-        <script src="https://bulka-games-llc.github.io/CatsBuilds_nutaku_box/Build/Builds_ntk_box.framework.js"></script>
-        <script src="https://bulka-games-llc.github.io/CatsBuilds_nutaku_box/Build/Builds_ntk_box.loader.js"></script>
+        <script src="https://kinky-cats-stagebox.b-cdn.net/Build/Builds_ntk_box.framework.js"></script>
+        <script src="https://kinky-cats-stagebox.b-cdn.net/Build/Builds_ntk_box.loader.js"></script>
         <script>
             let container        = document.querySelector('#unity-container');
             let canvas           = document.querySelector('#unity-canvas');
@@ -40,15 +40,15 @@
                 updateBannerVisibility();
             }
 
-            const buildUrl = 'https://bulka-games-llc.github.io/CatsBuilds_nutaku_box/Build';
+            const buildUrl = 'https://kinky-cats-stagebox.b-cdn.net/Build';
             const config   = {
                 dataUrl:            buildUrl + '/Builds_ntk_box.data',
                 frameworkUrl:       buildUrl + '/Builds_ntk_box.framework.js',
                 codeUrl:            buildUrl + '/Builds_ntk_box.wasm',
-                streamingAssetsUrl: "https://bulka-games-llc.github.io/CatsBuilds_nutaku_box/StreamingAssets",
+                streamingAssetsUrl: "https://kinky-cats-stagebox.b-cdn.net/StreamingAssets",
                 companyName:        'Bulka Games LLC',
-                productName:        'Cats',
-                productVersion:     "1.5.1",
+                productName:        'Kinky Cats',
+                productVersion:     "1.5.6",
                 showBanner:         unityShowBanner,
             };
 
@@ -117,7 +117,7 @@
                 <div id="unity-footer">
                     <div id="unity-webgl-logo"></div>
                     <div id="unity-fullscreen-button"></div>
-                    <div id="unity-build-title">Cats</div>
+                    <div id="unity-build-title">Kinky Cats</div>
                 </div>
             </div>
         </body>
