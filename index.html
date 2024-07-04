@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-    <ModulePrefs title="Kinky Cats" author="Bulka Games LLC" thumbnail="" screenshot="" height="800" width="1920">
+    <ModulePrefs title="Kinky Cats" author="Bulka Games LLC" thumbnail="" screenshot="" height="500" width="1920">
         <Require feature="opensocial-0.8"/>
         <Require feature="opensocial-payment"/>
         <Require feature="nutaku"/>
         <Require feature="dynamic-height" />
         <Link rel="payment.handler" href="https://nutaku-1.webhooks.balancy.dev/v1/nutaku/confirmation"/>
     </ModulePrefs>
-    <Content preferred_width="1920" preferred_height="800" type="html" view="canvas">
+    <Content preferred_width="1920" preferred_height="500" type="html" view="canvas">
         <![CDATA[
         <script src="https://kinky-cats-stagebox.b-cdn.net/Build/Builds_ntk_box.framework.js"></script>
         <script src="https://kinky-cats-stagebox.b-cdn.net/Build/Builds_ntk_box.loader.js"></script>
@@ -104,9 +104,9 @@
 
             gadgets.util.registerOnLoadHandler(init);
         </script>
-        <body style="text-align: center; padding: 0; border: 0; margin: 0; min-height: 800px;">
+        <body style="text-align: center; padding: 0; border: 0; margin: 0; min-height: 500px;">
             <div id="unity-container" class="unity-desktop">
-                <canvas id="unity-canvas" width=1920 height=800></canvas>
+                <canvas id="unity-canvas" width=1920 height=500></canvas>
                 <div id="unity-loading-bar">
                     <div id="unity-logo"></div>
                     <div id="unity-progress-bar-empty">
