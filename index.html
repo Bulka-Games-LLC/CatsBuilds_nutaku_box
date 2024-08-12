@@ -4,7 +4,7 @@
         <Require feature="opensocial-0.8"/>
         <Require feature="opensocial-payment"/>
         <Require feature="nutaku"/>
-        //<Require feature="dynamic-height" />
+        <Require feature="dynamic-height" />
         <Link rel="payment.handler" href="https://nutaku-1.webhooks.balancy.dev/v1/nutaku/confirmation"/>
     </ModulePrefs>
    <Content preferred_width="1920" type="html" view="canvas">
@@ -49,19 +49,12 @@
             gadgets.util.registerOnLoadHandler(init);
         </script>
          
-        <body style="min-height: 1080px">
+        <body style="min-height: 850; background-image: url('https://kinky-cats-stagebox.b-cdn.net/TemplateData/bulka-logo.jpg');">
             <div class="main" id="main">
-                <div class="mainLeft"></div>
-                <div class="mainRight"></div>
                 <div class="webgl-content" id="webglcontent" style="min-height: 850px">
-                    <div id="unity-container"  class="unity-desktop">
+                    <div id="unity-container"  class="unity-desktop">					
                         <canvas id="unity-canvas"></canvas>
-                    </div>
-                    <div id="LogoBG" class="Logos LogoBG">
-					<img id="logo-icon" src="https://kinky-cats-stagebox.b-cdn.net/TemplateData/bulka-logo.jpg">
-					</div>
-                    //<div id="LogoA"  class="Logos LogoA"></div>
-                    //<div id="LogoB"  class="Logos LogoB"></div>
+                    </div>                 
                 </div>
                 //<div id="Footer" class="Footer" onclick="gameInstance.SetFullscreen(1)"></div>
             </div>
