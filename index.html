@@ -33,7 +33,7 @@
             function init() {
 			    console.warn('init');
                 canvas = document.querySelector("#unity-canvas"); //or getElementById('unity-canvas')
-				bar = document.querySelector("#progress-bar");
+				bar = document.querySelector("#progress-bar-primary");
 				barParent = document.querySelector("#logo-div");
 				
 				canvas.style.width  = '100%';
@@ -46,10 +46,7 @@
                   //console.log("*");
                   }).then((unityInstance) => {
 				    gameInstance = unityInstance;
-					
-					var bb = document.querySelector("#unity-body");
-					bb.style.backgroundImage = '';
-					//barParent.parentNode.removeChild(barParent);
+					barParent.parentNode.removeChild(barParent);
                     console.log("WAS LOADED");
                   }).catch((message) => {
                     alert(message);
@@ -67,7 +64,7 @@
 				style="object-fit: cover;"
 				/>
 				
-				<img id="progress-bar" src="https://kinky-cats-stagebox.b-cdn.net/TemplateData/progress-bar-full.png"
+				<img id="progress-bar-primary" src="https://kinky-cats-stagebox.b-cdn.net/TemplateData/progress-bar-full.png"
 				style="width:0px; height:10px; left:0px; bottom:0px; position:absolute;"
 				/>
 				</div>			
