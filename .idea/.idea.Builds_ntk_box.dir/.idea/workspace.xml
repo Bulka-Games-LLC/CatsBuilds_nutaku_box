@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4ac9e2c9-3f87-4f2b-86db-d21fb2d2db63" name="Changes" comment="500 106">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Builds_ntk_box.dir/.idea/.gitignore" beforeDir="false" />
